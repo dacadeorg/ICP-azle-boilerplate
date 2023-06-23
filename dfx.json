@@ -1,7 +1,6 @@
 {
   "canisters": {
     "message_board": {
-      "main": "src/index.ts",
       "type": "custom",
       "build": "npx azle message_board",
       "root": "src",
