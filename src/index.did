@@ -1,0 +1,37 @@
+type Message = record {
+  id : text;
+  title : text;
+  body : text;
+  createdAt : nat64;
+  read : bool;
+  updatedAt : opt nat64;
+  recipientId : text;
+  senderId : text;
+};
+type MessagePayload = record { title : text; body : text; recipientId : text };
+type Participant = record {
+  id : text;
+  username : text;
+  password : text;
+  createdAt : nat64;
+  updatedAt : opt nat64;
+  lastLogin : opt nat64;
+};
+type ParticipantPayload = record { username : text; password : text };
+type _AzleResult = variant { Ok : Message; Err : text };
+type _AzleResult_1 = variant { Ok : Participant; Err : text };
+type _AzleResult_2 = variant { Ok : vec Message; Err : text };
+type _AzleResult_3 = variant { Ok : vec Participant; Err : text };
+type _AzleResult_4 = variant { Ok : text; Err : text };
+service : () -> {
+  addMessage : (MessagePayload) -> (_AzleResult);
+  addParticipant : (ParticipantPayload) -> (_AzleResult_1);
+  deleteMessage : (text) -> (_AzleResult);
+  getMessage : (text) -> (_AzleResult) query;
+  getMessages : () -> (_AzleResult_2) query;
+  getMessagesContainingString : (text) -> (_AzleResult_2) query;
+  getMyMessages : () -> (_AzleResult_2);
+  getParticipants : () -> (_AzleResult_3) query;
+  login : (text, text) -> (_AzleResult_4);
+  updateMessage : (text, MessagePayload) -> (_AzleResult);
+}
