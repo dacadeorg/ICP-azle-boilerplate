@@ -1,24 +1,16 @@
 {
   "name": "dfinity_project",
-  "version": "1.0.0",
-  "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "dependencies": {
-    "@dfinity/agent": "^0.15.6",
-    "@dfinity/candid": "^0.15.6",
+    "@dfinity/agent": "^0.19.2",
+    "@dfinity/candid": "^0.19.2",
     "azle": "^0.18.6",
     "uuid": "^9.0.0"
   },
   "engines": {
     "node": "^12 || ^14 || ^16 || ^18"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
-    "@types/uuid": "^9.0.6"
+    "@types/uuid": "^9.0.1"
   }
 }
