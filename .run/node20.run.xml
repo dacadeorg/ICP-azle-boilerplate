@@ -1,0 +1,13 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="node20" type="NodeJSConfigurationType" singleton="false" path-to-node="$PROJECT_DIR$/../OneDrive - NEXITY/Documents/node-v20.10.0-win-x64/node" working-dir="$PROJECT_DIR$">
+    <method v="2">
+      <option name="NpmBeforeRunTask" enabled="true">
+        <package-json value="$PROJECT_DIR$/package.json" />
+        <command value="install" />
+        <node-interpreter value="$PROJECT_DIR$/../OneDrive - NEXITY/Documents/node-v20.10.0-win-x64/node" />
+        <package-manager value="npm" />
+        <envs />
+      </option>
+    </method>
+  </configuration>
+</component>
