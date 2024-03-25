@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "strictPropertyInitialization": false,
     "strict": true,
     "target": "ES2020",
     "moduleResolution": "node",
