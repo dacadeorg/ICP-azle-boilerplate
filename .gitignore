@@ -12,6 +12,7 @@
 
 # generated files
 src/declarations/
+target
 
 # frontend code
 node_modules/
