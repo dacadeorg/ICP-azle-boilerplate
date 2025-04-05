@@ -1,1 +1,1 @@
-// cannister code goes here
+// canister code goes here
